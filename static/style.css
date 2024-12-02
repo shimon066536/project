@@ -1,0 +1,18 @@
+h1 {
+    color: #ff4500; /* צבע אדום בולט */
+}
+
+h2 {
+    color: #1e90ff; /* צבע כחול בולט */
+}
+
+form {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+label, input, button {
+    display: block;
+    margin: 5px 0;
+}
+

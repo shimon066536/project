@@ -1,0 +1,20 @@
+<!-- templates/play.html -->
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>משחק טריוויה</title>
+</head>
+<body>
+    <h1>ברוך הבא למשחק הטריוויה!</h1>
+    <p>שאלה: {{ question }}</p>
+    <form method="POST" action="/play">
+        {% for index, answer in answers %}
+            <input type="radio" id="answer{{ index }}" name="answer" value="{{ index }}" required>
+            <label for="answer{{ index }}">{{ answer }}</label><br>
+        {% endfor %}
+        <button type="submit">שלח תשובה</button>
+    </form>
+</body>
+</html>
+
