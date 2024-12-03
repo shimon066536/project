@@ -5,7 +5,7 @@ FROM python:3.10-slim
 WORKDIR /app
 
 # העתקת קבצים
-COPY . /app
+COPY   . /app
 
 # התקנת חבילות
 RUN pip install --no-cache-dir -r requirements.txt
