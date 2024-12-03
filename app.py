@@ -2,7 +2,7 @@ from flask import Flask, g, render_template, request, redirect, url_for, session
 import socket
 import chatlib
 
-# הגדרת אפליקציית Flask
+# הגדרת - אפליקציית Flask
 app = Flask(__name__)
 print("app = ", app)
 app.secret_key = 'your_secret_key'
